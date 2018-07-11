@@ -1,0 +1,339 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'bebas';
+    src: url('../font/BebasNeue-webfont.eot');
+    src: url('../font/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/BebasNeue-webfont.woff') format('woff'),
+         url('../font/BebasNeue-webfont.ttf') format('truetype'),
+         url('../font/BebasNeue-webfont.svg#bebas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body{
+background: -webkit-linear-gradient(top, #EFEFEF, #FFFFFF); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, #EFEFEF, #FFFFFF); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, #EFEFEF, #FFFFFF); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(top, #EFEFEF, #FFFFFF); /* Standard syntax */
+  
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
+#wrapper {
+	max-width: 1440px;
+     overflow: auto;
+     position: relative;
+}
+
+.clear {
+	clear:both;
+}
+
+#logo{
+	position:absolute;
+	left:50%;
+	margin-left:-225px;
+	bottom:40%;
+	margin-bottom:200px;
+	height:100px;
+	width:450px;
+}
+#email{
+	position:absolute;
+	left:50%;
+	margin-left:-211px;
+	bottom:40%;
+	margin-bottom:140px;
+	margin-top:150px;
+	padding:10px;
+	background-color:white;
+	width:422px;
+	height:43px;
+}
+
+#password{
+	position:absolute;
+	left:50%;
+	margin-left:-211px;
+	bottom:40%;
+	margin-bottom:90px;
+	margin-top:75px;
+	padding:10px;
+	background-color:white;
+	width:422px;
+	height:43px;
+}
+
+#login{
+	position:absolute;
+	left:50%;
+	margin-left:-211px;
+	bottom:40%;
+	border:none;
+	color:white;
+	font-weight:bold;
+	background-color:red;
+	width:422px;
+	height:66px;
+}
+.login:hover{
+	color:gray;
+}
+
+#menu-title {
+	text-align: center;
+	font-family: 'bebas', sans-serif;
+	color: #fff;
+	font-weight: 200;
+	letter-spacing: 2px;
+}
+
+#menu {
+	width: 250px;
+	height: 100%;
+	background-color: #0167b1;
+	float: left;
+	font-size: .8em;
+	letter-spacing: 2px;
+	position: fixed;
+}
+
+    #menu li {
+        list-style: none;
+        position: relative;
+        background: #0167b1;
+        border-bottom: 1px solid #ffffff;
+        cursor: pointer;
+    }
+ 
+        #menu li li {
+            list-style: none;
+            position: relative;
+            background: #641b1b;
+            left: 250px;
+            top: -27px;
+            padding-left: 1em;
+            padding-right: 1em;
+            min-width: 130px;
+        }
+ 
+ 
+    #menu ul li a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        color:white;
+        text-transform: uppercase;
+        padding-bottom: 2em;
+        padding-top: 2em;
+    }
+ 
+    #menu ul ul {
+        position: absolute;
+        visibility: hidden;
+        top: 27px;
+    }
+ 
+    #menu ul li:hover ul {
+        visibility: visible;
+    }
+ 
+    #menu li:hover {
+        background-color: red;
+    }
+ 
+    #menu ul li:hover ul li a:hover {
+        background-color: red;
+    }
+ 
+    #menu a:hover {
+       
+    }
+    
+    #logo-sidebar {
+    	width: 200px;
+    	display: block;
+    	text-align: center;
+    	margin: auto;
+    	position: fixed;
+		bottom: 0;
+		padding-left: 21px;
+	}
+	
+	#content {
+		padding-left: 290px;
+		padding-top: 2em;
+	}
+	
+	#page-title {
+		font-family: 'bebas', sans-serif;
+		font-weight: 200;
+		color: #1072B9;
+		padding-bottom: 0.5em;
+		font-size: 2.5em;
+	}
+	
+	#data-table {
+		border: #c0c0c0 solid 2px;
+	}
+	
+	#data-table th {
+		background-color: #ED2D24;
+		color: #fff;
+		padding: 5px;
+		text-transform: uppercase;
+		font-weight: 200;
+	}
+	
+	#data-table td {
+		padding: 5px;
+	}
+	
+	
+	#data-table tr.odd {
+		background-color: #DBDBDB;
+	}
+	
+	#data-table tr.odd:hover {
+		background-color: #1072B9;
+		color: #fff;
+	}
+	
+	#data-table tr.even {
+		background-color: #EDEDED;
+	}
+	
+	#data-table tr.even:hover {
+		background-color: #1072B9;
+		color: #fff;
+	}
+	
+	#data-table td {
+		min-width: 100px;
+	}
+
+	#data-table td.odd {
+		background-color: #DBDBDB;
+	}
+	
+	#data-table td.odd:hover {
+		background-color: #1072B9;
+		color: #fff;
+	}
+	
+	#data-table td.even {
+		background-color: #EDEDED;
+	}
+	
+	#data-table td.even:hover {
+		background-color: #1072B9;
+		color: #fff;
+	}
+    
+.insert{
+	position:absolute;
+	left:500px;
+	width:240px;
+}
+
+.small {
+	font-size:	.3em;
+	display: block;
+}
+
+.brand-name {
+	font-size: .4em;
+	font-weight: bold;
+	display: block;
+}
+
+#message{
+	position:absolute;
+	left:500px;
+	min-width:400px;
+	width:400px;
+	max-width:400px;
+	min-height:300px;
+	height:300px;
+	max-height:300px;
+}
+
+#msgsub{
+	margin-top:280px;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+b {
+
+}
+
+.enter{
+	position:absolute;
+	left:280px;
+}
+button{
+	text-transform: uppercase;
+	font-weight: 200;
+	background-color: #1072B9;
+	color: #fff;
+	padding: 1em;
+	font-size: 13px;
+letter-spacing: 2px;
+display: block;
+border: none;
+color: #fff;
+width: auto;
+cursor: pointer;
+text-transform: uppercase;
+display: inline-block;
+padding: 14px 49px;
+}
+.submit {
+	text-transform: uppercase;
+	font-weight: 200;
+	background-color: #1072B9;
+	color: #fff;
+	padding: 1em;
+	font-size: 13px;
+letter-spacing: 2px;
+display: block;
+border: none;
+color: #fff;
+width: auto;
+cursor: pointer;
+text-transform: uppercase;
+display: inline-block;
+padding: 14px 49px;
+margin-left: 290px;
+}
+.msg{
+	position:absolute;
+	left:750px;
+	color:red;
+}
+
+#footer {
+	padding: .5em;
+	text-align: center;
+	font-size: .4em;
+}
